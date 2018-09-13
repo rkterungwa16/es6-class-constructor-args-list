@@ -1,10 +1,11 @@
-const chai = require('chai')
+import chai from 'chai'
+import ClassObj from './sampleClass'
+
 const expect = chai.expect
 const { extractArgsList } = require('../src')
 
-const classObj = ''
 describe('Es6 class Arg list', () => {
-  it('Should return string', () => {
-    expect(extractArgsList(typeof classObj) === 'string')
+  it('Should return an array of string', () => {
+    expect(extractArgsList(ClassObj).length).to.equal(2)
   })
 })
