@@ -7,10 +7,8 @@ export function extractArgsList (classObj) {
 }
 
 function extractConstructorElt (classObj) {
-
   const classEltsString = classObj.toString().split('\n').filter((classElements) => {
     return classElements.match(/([()])/g)
   })
-
-  return classEltsString[0].replace(/([^a-z0-9])/g, ' ').split(' ')
+  return classEltsString[0].replace(/[^\w]/g, ' ').split(' ')
 }
