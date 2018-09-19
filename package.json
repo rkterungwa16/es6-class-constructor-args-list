@@ -1,6 +1,6 @@
 {
   "name": "es6-class-constructor-args-list",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Extract es6 class constructor argument names into an array",
   "main": "lib/index.js",
   "scripts": {
