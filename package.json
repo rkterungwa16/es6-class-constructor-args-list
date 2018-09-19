@@ -2,8 +2,9 @@
   "name": "es6-class-constructor-args-list",
   "version": "0.0.2",
   "description": "Extract es6 class constructor argument names into an array",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
+    "build": "babel src --presets @babel/preset-env --out-dir lib",
     "test": "mocha tests --compilers js:@babel/register test/"
   },
   "repository": {
@@ -24,9 +25,12 @@
   },
   "homepage": "https://github.com/rkterungwa16/es6-class-constructor-args-list#readme",
   "devDependencies": {
-    "@babel/core": "^7.0.1",
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
     "@babel/node": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
     "chai": "^4.1.2"
-  }
+  },
+  "dependencies": {}
 }
