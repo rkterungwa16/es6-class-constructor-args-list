@@ -1,3 +1,5 @@
+![Build Status](https://travis-ci.org/rkterungwa16/es6-class-constructor-args-list.svg?branch=master)
+
 # ES6 Class Constructor Args list
 
 Extract argument names from es6 class constructor into an array. Used for constructor dependency injection.
